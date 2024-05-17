@@ -34,7 +34,7 @@ const Product = ({ product }) => {
         </div>
 
         <div className="flex mt-auto justify-between items-center">
-          <p className="text-primary">${price}</p>
+          <p className="text-red-500 font-bold">${price}</p>
           <button className="btn btn-primary" onClick={handleAddToCart}>
             Add to Cart
           </button>

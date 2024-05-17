@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      <div className="px-10">
+      <div className="px-10 ">
         <Outlet />
       </div>
       <Footer />
