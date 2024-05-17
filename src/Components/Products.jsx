@@ -38,7 +38,7 @@ const Products = () => {
       </div>
 
       {/* Products and Cart */}
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col md:flex-row">
         <div className="w-full lg:w-3/5 p-4">
           {isGridView ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -64,7 +64,7 @@ const Products = () => {
             </button>
           </div>
         </div>
-        <div className="hidden xl:block xl:w-2/5 p-4">
+        <div className="hidden lg:block lg:w-2/5 p-4">
           <div>
             <Cart />
           </div>

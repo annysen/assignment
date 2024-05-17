@@ -16,9 +16,12 @@ const Product = ({ product }) => {
       <figure>
         <img src={image} alt={title} className="w-full h-48 object-cover" />
       </figure>
-      <div className="card-body">
-        <h2 className="card-title">{title}</h2>
+      <div className="card-body flex flex-col">
+        <h2 className="card-title">
+          {title.length > 100 ? `${title.substring(0, 100)}...` : title}
+        </h2>
         <div className="flex justify-between items-center mt-2  ">
+          {/* rating section  */}
           <div className="flex flex-col ">
             <Rating
               placeholderRating={rating.rate}
@@ -29,7 +32,8 @@ const Product = ({ product }) => {
             <p className="text-gray-500">{`(${rating.count} View)`}</p>
           </div>
         </div>
-        <div className="flex justify-between items-center">
+
+        <div className="flex mt-auto justify-between items-center">
           <p className="text-primary">${price}</p>
           <button className="btn btn-primary" onClick={handleAddToCart}>
             Add to Cart
